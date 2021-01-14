@@ -1,14 +1,11 @@
 //import java.awt.event.*;  
 //import javax.swing.*; 
-//import cosas.Breach;
-import GUI.MainG;
-import GUI.BreachG;
+import cosas.Breach;
+//import GUI.MainG;
 
 public class Main {
     public static void main(String[] args) {
-        MainG MainG = new MainG();
-        BreachG BreachG = new BreachG();
-        //MainG.main();
-        System.out.println("a");
+        //MainG mainG = new MainG();
+       // mainG.innit();
     } 
 }  

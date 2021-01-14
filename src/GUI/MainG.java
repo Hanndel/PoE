@@ -1,16 +1,26 @@
 package GUI;
-import javax.swing.*;  
-public class MainG {  
-public static void main(String[] args) {  
-JFrame f=new JFrame();//creating instance of JFrame  
-          
-JButton b=new JButton("b");//creating instance of JButton  
-b.setBounds(130,100,100, 40);//x axis, y axis, width, height  
-          
-f.add(b);//adding button in JFrame  
-          
-f.setSize(400,500);//400 width and 500 height  
-f.setLayout(null);//using no layout managers  
-f.setVisible(true);//making the frame visible  
-}  
-}  
+import javax.swing.*;
+import java.awt.*;  
+public class MainG { 
+    public static void main(String[] args) {
+        innit();
+    } 
+    public static void innit() {
+        JFrame f=new JFrame();
+        JButton b = new JButton("a");
+        JButton b1 = new JButton();
+        JScrollPane a = new JScrollPane();
+        a.createHorizontalScrollBar();
+        JPanel buttonCorner = new JPanel(); //use FlowLayout
+        JToggleButton isMetric = new JToggleButton("cm", true);
+        isMetric.setFont(new Font("SansSerif", Font.PLAIN, 11));
+        isMetric.setMargin(new Insets(2,2,2,2));
+        buttonCorner.add(isMetric);
+                //JScrollBar b1=new JScrollBar(JScrollBar.VERTICAL, 0, 1, 0, 100);
+        //f.add(b1,BorderLayout.EAST);
+        f.setSize(400,500);
+        f.setVisible(true);
+    }
+
+
+}
